@@ -128,6 +128,7 @@ ReactDOM.render(
 | `placeholderSize` | `integer` | `40` | A number value specifying the width of the placeholder image, if enabled with the option above |
 | `adapter` | `Adapter` | JIMP | Specify which adapter to use. Can only be specified in the loader options. |
 | `disable` | `boolean` | `false` | Disable processing of images by this loader (useful in development). `srcSet` and other attributes will still be generated but only for the original size. Note that the `width` and `height` attributes will both be set to `100` but the image will retain its original dimensions. |
+| `emitFile` | `boolean` | `true` | If `true`, emits a file (writes a file to the filesystem). If `false`, the loader will still return a object with the public URI but will not emit the file. It is often useful to disable this option for server-side packages. |
 
 #### Adapter-specific options
 
@@ -197,3 +198,7 @@ In your webpack config, require your adapter
 ## See also
 
 - Inspired by [resize-image-loader](https://github.com/Levelmoney/resize-image-loader), but simpler and without dependency on ImageMagick
+
+- fork [herrstucki/responsive-loader](https://github.com/herrstucki/responsive-loader)
+
+- added [emitFile option pull request](https://github.com/herrstucki/responsive-loader/pull/67)
