@@ -202,3 +202,5 @@ In your webpack config, require your adapter
 - fork [herrstucki/responsive-loader](https://github.com/herrstucki/responsive-loader)
 
 - added [emitFile option pull request](https://github.com/herrstucki/responsive-loader/pull/67)
+
+- updated [sharp](https://www.npmjs.com/package/sharp)
